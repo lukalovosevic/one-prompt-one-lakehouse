@@ -1,0 +1,11 @@
+.env
+.dive-preview/.env
+node_modules/
+.dive-preview/node_modules/
+.dive-preview/dist/
+data/
+*.duckdb
+*.duckdb.wal
+.DS_Store
+__pycache__/
+*.pyc

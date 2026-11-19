@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -50 1200 930" width="1200" height="930">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#383838"/></marker>
+<marker id="ah-s" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#383838"/></marker></defs>
+<rect x="-20" y="-50" width="1200" height="930" fill="#F4EFEA"/>
+<text x="375" y="3.0" font-size="28" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">ONE PROMPT, ONE LAKEHOUSE</text>
+<text x="217" y="28.0" font-size="16" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">Hacker News · Apache Iceberg on S3 Tables · MotherDuck · DuckDB on laptop, cloud and browser</text>
+<rect x="0" y="92" width="245" height="668" rx="14" fill="#ECE6DF" stroke="#ECE6DF" stroke-width="1"/>
+<text x="22" y="82.0" font-size="16" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">SOURCE + LAPTOP</text>
+<rect x="14" y="123" width="205" height="100" rx="14" fill="#383838" stroke="#383838" stroke-width="2"/>
+<rect x="22" y="115" width="205" height="100" rx="14" fill="#FFFFFF" stroke="#383838" stroke-width="2"/>
+<text x="38" y="141.0" font-size="16" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">HUGGING FACE</text>
+<text x="38" y="164.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">OpenPipe/hacker-news</text>
+<text x="38" y="181.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">41.8M items, to Oct 2024</text>
+<text x="38" y="199.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">39 parquet files, 11 GB</text>
+<polyline points="124,215 124,275" fill="none" stroke="#383838" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="91.88" y="235.25" width="64.24000000000001" height="19.5" fill="#F4EFEA"/>
+<text x="124.0" y="250.32" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838" text-anchor="middle">download</text>
+<rect x="14" y="283" width="205" height="85" rx="14" fill="#383838" stroke="#383838" stroke-width="2"/>
+<rect x="22" y="275" width="205" height="85" rx="14" fill="#FFFFFF" stroke="#383838" stroke-width="2"/>
+<text x="38" y="301.0" font-size="16" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">LAPTOP</text>
+<text x="38" y="324.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">scripts 00 + 03</text>
+<text x="38" y="341.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">aws s3 sync to S3</text>
+<polyline points="227,317 300,317" fill="none" stroke="#383838" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="14" y="528" width="205" height="115" rx="14" fill="#383838" stroke="#383838" stroke-width="2"/>
+<rect x="22" y="520" width="205" height="115" rx="14" fill="#FFFFFF" stroke="#383838" stroke-width="2"/>
+<text x="38" y="546.0" font-size="16" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">DUCKDB CLI 1.5.6</text>
+<text x="38" y="569.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">ATTACH S3 Tables catalog</text>
+<text x="38" y="586.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">SSO credential chain</text>
+<text x="38" y="604.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">same SQL as the cloud</text>
+<text x="38" y="621.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">50.5M-row scan: 572 s</text>
+<polyline points="227,577 300,577" fill="none" stroke="#383838" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="280" y="92" width="305" height="668" rx="14" fill="#ECE6DF" stroke="#ECE6DF" stroke-width="1"/>
+<text x="300" y="82.0" font-size="16" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">LAKEHOUSE · AWS us-east-1</text>
+<rect x="300" y="115" width="265" height="115" rx="14" fill="#FFFFFF" stroke="#383838" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="316" y="139.0" font-size="14" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">WHY STAGE RAW IN S3?</text>
+<text x="316" y="162.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">Hugging Face rate-limits</text>
+<text x="316" y="179.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">MotherDuck&#x27;s parallel reads</text>
+<text x="316" y="197.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">(HTTP 429), so the parquet</text>
+<text x="316" y="214.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">is staged in plain S3 first.</text>
+<rect x="292" y="283" width="265" height="85" rx="14" fill="#383838" stroke="#383838" stroke-width="2"/>
+<rect x="300" y="275" width="265" height="85" rx="14" fill="#FFFFFF" stroke="#383838" stroke-width="2"/>
+<text x="316" y="301.0" font-size="16" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">S3 BUCKET · RAW</text>
+<text x="316" y="324.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">mure-lakehouse-raw</text>
+<text x="316" y="341.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">39 parquet files, untouched</text>
+<polyline points="340,360 340,430" fill="none" stroke="#383838" stroke-width="2" marker-end="url(#ah)"/>
+<text x="356" y="392.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">MotherDuck CTAS</text>
+<text x="356" y="409.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">41.8M rows in 4 min</text>
+<rect x="292" y="438" width="265" height="280" rx="14" fill="#383838" stroke="#383838" stroke-width="2"/>
+<rect x="300" y="430" width="265" height="280" rx="14" fill="#FFDE00" stroke="#383838" stroke-width="2"/>
+<text x="316" y="460.0" font-size="18" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">S3 TABLES</text>
+<text x="316" y="482.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">Iceberg REST catalog</text>
+<text x="316" y="499.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">bucket mure-lakehouse · ns hn</text>
+<text x="316" y="530.0" font-size="15" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">items · 50.5M rows</text>
+<text x="316" y="548.75" font-size="15" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">stories · 4.8M</text>
+<text x="316" y="567.5" font-size="15" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">stories_classified · 567k</text>
+<text x="316" y="586.25" font-size="15" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">daily_topics · 65k</text>
+<text x="316" y="605.0" font-size="15" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">top_stories · 19k</text>
+<text x="316" y="639.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">daily_topics + top_stories</text>
+<text x="316" y="656.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">are the Dive&#x27;s serving tables</text>
+<rect x="620" y="92" width="285" height="668" rx="14" fill="#ECE6DF" stroke="#ECE6DF" stroke-width="1"/>
+<text x="640" y="82.0" font-size="16" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">MOTHERDUCK</text>
+<rect x="632" y="438" width="245" height="125" rx="14" fill="#383838" stroke="#383838" stroke-width="2"/>
+<rect x="640" y="430" width="245" height="125" rx="14" fill="#6FC2FF" stroke="#383838" stroke-width="2"/>
+<text x="656" y="460.0" font-size="18" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">LAKEHOUSE DB</text>
+<text x="656" y="482.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">CREATE DATABASE lakehouse</text>
+<text x="656" y="499.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">TYPE ICEBERG, s3_tables</text>
+<text x="656" y="517.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">reads + writes the catalog</text>
+<text x="656" y="534.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">50.5M-row scan: 28 s</text>
+<polyline points="565,492 640,492" fill="none" stroke="#383838" stroke-width="2" marker-start="url(#ah-s)" marker-end="url(#ah)"/>
+<rect x="632" y="608" width="245" height="135" rx="14" fill="#383838" stroke="#383838" stroke-width="2"/>
+<rect x="640" y="600" width="245" height="135" rx="14" fill="#97D4FF" stroke="#383838" stroke-width="2"/>
+<text x="656" y="628.0" font-size="16" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">FLIGHT</text>
+<text x="656" y="649.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">hn-lakehouse-transform</text>
+<text x="656" y="666.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">Python, runs in MotherDuck</text>
+<text x="656" y="684.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">prompt_jev() tags titles</text>
+<text x="656" y="701.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">with 1 of 10 topics, 50k/batch</text>
+<text x="656" y="719.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">567k titles classified</text>
+<polyline points="762,600 762,555" fill="none" stroke="#383838" stroke-width="2" marker-start="url(#ah-s)" marker-end="url(#ah)"/>
+<rect x="940" y="92" width="230" height="668" rx="14" fill="#ECE6DF" stroke="#ECE6DF" stroke-width="1"/>
+<text x="960" y="82.0" font-size="16" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">CONSUMERS</text>
+<rect x="952" y="123" width="190" height="115" rx="14" fill="#383838" stroke="#383838" stroke-width="2"/>
+<rect x="960" y="115" width="190" height="115" rx="14" fill="#FF9A94" stroke="#383838" stroke-width="2"/>
+<text x="976" y="141.0" font-size="16" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">CLAUDE CODE</text>
+<text x="976" y="164.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">the one prompt</text>
+<text x="976" y="181.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">MotherDuck MCP server</text>
+<text x="976" y="199.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">CTAS, run the Flight,</text>
+<text x="976" y="216.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">build the Dive</text>
+<polyline points="960,172 860,172 860,430" fill="none" stroke="#383838" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="846.08" y="291.25" width="27.84" height="19.5" fill="#F4EFEA"/>
+<text x="860.0" y="306.32" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838" text-anchor="middle">MCP</text>
+<rect x="632" y="123" width="190" height="100" rx="14" fill="#383838" stroke="#383838" stroke-width="2"/>
+<rect x="640" y="115" width="190" height="100" rx="14" fill="#FFFFFF" stroke="#383838" stroke-width="2"/>
+<text x="656" y="141.0" font-size="16" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">HACKER_NEWS SHARE</text>
+<text x="656" y="164.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">MotherDuck public share</text>
+<text x="656" y="181.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">daily from BigQuery</text>
+<text x="656" y="199.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">8.7M items to 15 Nov 2026</text>
+<polyline points="735,215 735,430" fill="none" stroke="#383838" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="676" y="295" width="118" height="38" fill="#F4EFEA"/>
+<text x="735" y="310.32" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838" text-anchor="middle">sql/05 append</text>
+<text x="735" y="327.82" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838" text-anchor="middle">18 commits, 9 min</text>
+<rect x="952" y="438" width="190" height="290" rx="14" fill="#383838" stroke="#383838" stroke-width="2"/>
+<rect x="960" y="430" width="190" height="290" rx="14" fill="#50C7B7" stroke="#383838" stroke-width="2"/>
+<text x="976" y="460.0" font-size="18" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">DIVE</text>
+<text x="976" y="482.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">app.motherduck.com</text>
+<text x="976" y="499.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">engine toggle</text>
+<rect x="974" y="522" width="162" height="72" rx="14" fill="#FFFFFF" stroke="#383838" stroke-width="2"/>
+<text x="984" y="544.0" font-size="14" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">CLOUD MODE</text>
+<text x="984" y="564.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">SQL to Iceberg</text>
+<text x="984" y="581.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">0.9-1.7 s / step</text>
+<rect x="974" y="610" width="162" height="92" rx="14" fill="#FFFFFF" stroke="#383838" stroke-width="2"/>
+<text x="984" y="632.0" font-size="14" font-family="Cousine, 'JetBrains Mono', Menlo, monospace" fill="#383838">BROWSER MODE</text>
+<text x="984" y="652.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">DuckDB-Wasm, in-tab</text>
+<text x="984" y="669.5" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">84k rows copied once</text>
+<text x="984" y="687.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">80-155 ms / step</text>
+<polyline points="885,500 925,500 925,558 960,558" fill="none" stroke="#383838" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="911.08" y="519.25" width="27.84" height="19.5" fill="#F4EFEA"/>
+<text x="925.0" y="534.32" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838" text-anchor="middle">SQL</text>
+<polyline points="885,535 905,535 905,656 960,656" fill="none" stroke="#383838" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ah)"/>
+<rect x="852" y="585.75" width="106" height="37" fill="#F4EFEA"/>
+<text x="905.0" y="600.82" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838" text-anchor="middle">copy once</text>
+<text x="905.0" y="618.32" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838" text-anchor="middle">(dual execution)</text>
+<text x="22" y="815.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">18 Nov 2026, 50.5M rows, Standard Duckling: ILIKE full scan, laptop 572 s vs MotherDuck 28 s · Dive step (2 Oct), cloud 0.9-1.7 s vs browser 80-155 ms</text>
+<text x="22" y="838.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">Sharp edges: catalog auth, Iceberg writes are merge-on-read, Iceberg databases cannot be shared, Hugging Face rate limits (hence the raw bucket)</text>
+<polyline points="124,643 124,780 605,780 605,540 640,540" fill="none" stroke="#383838" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ah)"/>
+<rect x="140" y="770.25" width="462" height="19.5" fill="#F4EFEA"/>
+<text x="375" y="785.32" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838" text-anchor="middle">or ATTACH 'md:' · dual execution: scan in MotherDuck, join on the laptop</text>
+<text x="22" y="861.0" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" fill="#383838">18 Nov 2026, laptop on ATTACH 'md:': local 3-row table JOIN top_stories 0.4 s (19k rows down) · JOIN items 32.4 s (50.5M values down) · filter in SQL 0.5 s</text>
+</svg>
