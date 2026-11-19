@@ -1,7 +1,7 @@
 # One Prompt, One Lakehouse
 
 Code and SQL from the talk **"One Prompt, One Lakehouse"** at Mure Forward #2 (DuckDB + Iceberg,
-19 Nov 2026).
+19 Nov 2026). Slides: [`slides/one-prompt-one-lakehouse.pdf`](slides/one-prompt-one-lakehouse.pdf).
 
 An agent (Claude Code with the MotherDuck MCP server and the AWS CLI) lands Hacker News in
 **Apache Iceberg on Amazon S3 Tables**, enriches it with **`prompt_jev()`** in **MotherDuck**, and
@@ -23,6 +23,7 @@ the cloud, plain DuckDB on a laptop, and DuckDB-Wasm in the browser.
 | [`.dive-preview/`](.dive-preview) | a small Vite harness to run the Dive locally |
 | [`prompts/`](prompts) | the prompt that rebuilds the whole stack, and the one-shot prompt for motherduck.com/try |
 | [`docs/`](docs) | architecture and Dive diagrams (Excalidraw and SVG sources) |
+| [`slides/`](slides) | the talk's slides as PDF |
 
 The data itself is not in the repo. `scripts/00` downloads it.
 
@@ -182,3 +183,7 @@ manifest statistics can't rule out, not the row count.
 Hacker News items from the [`OpenPipe/hacker-news`](https://huggingface.co/datasets/OpenPipe/hacker-news)
 dataset on Hugging Face (to Oct 2024) and MotherDuck's public `hacker_news` share (after that). Hacker
 News content belongs to its authors; this repo contains no data, only the code that loads it.
+
+## License
+
+The code in this repository is released under the [MIT License](LICENSE).
