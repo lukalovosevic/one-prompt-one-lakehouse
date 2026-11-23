@@ -103,6 +103,11 @@ Tables in `lakehouse.hn` after the build (data through 15 Nov 2026):
   shows the engine toggle, the Duckling size, and every query of the last interaction: where it
   ran (`motherduck`, `cloud → browser`, `browser`), its latency and its SQL.
 
+![The Dive in browser mode: the dashboard on the left, the pinned pane on the right with DuckDB-Wasm selected, the one-time 5.2 s cloud → browser copy of 84K rows, and a 29 ms query running in the browser](docs/dive-wasm.png)
+
+The Dive in browser mode with the pane pinned: the one-time copy from MotherDuck (5.2 s, 84K rows),
+then each click served from the tab (29 ms here).
+
 To run it locally, put `VITE_MOTHERDUCK_TOKEN=…` in `.dive-preview/.env`, then
 `cd .dive-preview && npm install && npx vite`. The harness copies `dive/dive.tsx` as `src/dive.tsx`;
 keep the two in sync.
